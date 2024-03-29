@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    font-family: 'sen';
+    overflow-x: hidden;
+     
+}
+#root{
+    height: 100vh;
+    width: 100vw;
+}
+.read{
+    height: 100%;
+    background-image:url("/public/read.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input {
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  .nav img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  .book {
+    height: 80px;
+    width: 80px;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .img {
+    height: 65px;
+    width: 65px;
+  }
+  .pages {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .pages .pages-num {
+    cursor: pointer;
+    padding: 8px 0.8rem;
+    background-color: rgb(212, 209, 209);
+  }
+  
+  .pages .pages-num:hover {
+    background-color: black;
+    color: white;
+  }
+  .pages .active {
+    background-color: black;
+    color: white;
+  }
+  .show{
+    height: 400px;
+    width: 280px;
+  }
+  .show img{
+    border-radius: 12px;
+  }
+
+  /* focus:outline-none rounded-md py-1 px-3 w-52 placeholder:text-gray-300 border  */
+  
